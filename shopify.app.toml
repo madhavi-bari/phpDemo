@@ -3,7 +3,7 @@
 client_id = "45c0745fb9bb09f8b0317a13948d558a"
 name = "php-demo"
 handle = "php-demo-4"
-application_url = "https://elimination-decide-unknown-loaded.trycloudflare.com"
+application_url = "https://guided-funk-duties-poultry.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://elimination-decide-unknown-loaded.trycloudflare.com/auth/callback",
-  "https://elimination-decide-unknown-loaded.trycloudflare.com/auth/shopify/callback",
-  "https://elimination-decide-unknown-loaded.trycloudflare.com/api/auth/callback"
+  "https://guided-funk-duties-poultry.trycloudflare.com/auth/callback",
+  "https://guided-funk-duties-poultry.trycloudflare.com/auth/shopify/callback",
+  "https://guided-funk-duties-poultry.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
