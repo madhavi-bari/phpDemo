@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "45c0745fb9bb09f8b0317a13948d558a"
+name = "php-demo"
+handle = "php-demo-4"
+application_url = "https://salary-service-ct-sentences.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "checkout-extrension-madhavi.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://salary-service-ct-sentences.trycloudflare.com/auth/callback",
+  "https://salary-service-ct-sentences.trycloudflare.com/auth/shopify/callback",
+  "https://salary-service-ct-sentences.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
