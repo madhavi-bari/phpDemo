@@ -3,7 +3,7 @@
 client_id = "45c0745fb9bb09f8b0317a13948d558a"
 name = "php-demo"
 handle = "php-demo-4"
-application_url = "https://salary-service-ct-sentences.trycloudflare.com"
+application_url = "https://fathers-winners-fever-polls.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://salary-service-ct-sentences.trycloudflare.com/auth/callback",
-  "https://salary-service-ct-sentences.trycloudflare.com/auth/shopify/callback",
-  "https://salary-service-ct-sentences.trycloudflare.com/api/auth/callback"
+  "https://fathers-winners-fever-polls.trycloudflare.com/auth/callback",
+  "https://fathers-winners-fever-polls.trycloudflare.com/auth/shopify/callback",
+  "https://fathers-winners-fever-polls.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
