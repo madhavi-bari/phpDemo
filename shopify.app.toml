@@ -3,7 +3,7 @@
 client_id = "45c0745fb9bb09f8b0317a13948d558a"
 name = "php-demo"
 handle = "php-demo-4"
-application_url = "https://increase-brad-carbon-hansen.trycloudflare.com"
+application_url = "https://anything-deserve-intl-beneath.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://increase-brad-carbon-hansen.trycloudflare.com/auth/callback",
-  "https://increase-brad-carbon-hansen.trycloudflare.com/auth/shopify/callback",
-  "https://increase-brad-carbon-hansen.trycloudflare.com/api/auth/callback"
+  "https://anything-deserve-intl-beneath.trycloudflare.com/auth/callback",
+  "https://anything-deserve-intl-beneath.trycloudflare.com/auth/shopify/callback",
+  "https://anything-deserve-intl-beneath.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
