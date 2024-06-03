@@ -24,6 +24,6 @@ RUN composer update
 # RUN chown www-data:www-data /app/storage/db.sqlite
 
 RUN cd frontend && npm install && npm run build
-RUN composer build
-
+# RUN composer build
+RUN npm run dev
 ENTRYPOINT [ "/app/entrypoint.sh" ]
