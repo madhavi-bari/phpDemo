@@ -17,7 +17,16 @@ COPY web/nginx.conf /etc/nginx/nginx.conf
 
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
-RUN npm install
+# Clear npm cache and install dependencies
+RUN npm cache clean --force \
+    && npm install --loglevel verbose \
+    && echo "npm install succeeded"
+
+# Run npm build step
 RUN npm run dev
 
+# Expose necessary ports (if applicable, adjust according to your application)
+EXPOSE 3000
+
+# Define entrypoint script
 ENTRYPOINT [ "/app/entrypoint.sh" ]
