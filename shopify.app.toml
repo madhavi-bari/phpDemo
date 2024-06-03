@@ -3,7 +3,7 @@
 client_id = "45c0745fb9bb09f8b0317a13948d558a"
 name = "php-demo"
 handle = "php-demo-4"
-application_url = "https://yes-rh-attribute-myrtle.trycloudflare.com"
+application_url = "https://sphere-extreme-belt-peripheral.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://yes-rh-attribute-myrtle.trycloudflare.com/auth/callback",
-  "https://yes-rh-attribute-myrtle.trycloudflare.com/auth/shopify/callback",
-  "https://yes-rh-attribute-myrtle.trycloudflare.com/api/auth/callback"
+  "https://sphere-extreme-belt-peripheral.trycloudflare.com/auth/callback",
+  "https://sphere-extreme-belt-peripheral.trycloudflare.com/auth/shopify/callback",
+  "https://sphere-extreme-belt-peripheral.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
