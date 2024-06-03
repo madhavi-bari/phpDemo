@@ -11,6 +11,7 @@ RUN docker-php-ext-install pdo
 
 COPY --chown=www-data:www-data web /app
 WORKDIR /app
+COPY package.json /app
 
 # Overwrite default nginx config
 COPY web/nginx.conf /etc/nginx/nginx.conf
@@ -18,7 +19,11 @@ COPY web/nginx.conf /etc/nginx/nginx.conf
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
+RUN composer install
+RUN touch /app/storage/db.sqlite
+RUN chown www-data:www-data /app/storage/db.sqlite
 
-RUN npm run dev
+RUN cd frontend && npm install && npm run build
+RUN composer build
 
 ENTRYPOINT [ "/app/entrypoint.sh" ]
