@@ -19,7 +19,7 @@ COPY web/nginx.conf /etc/nginx/nginx.conf
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
-RUN cd web && composer install && cd ..
+RUN cd /app/web && composer install && cd ..
 RUN cd frontend && npm install && npm run build
 RUN composer build
 
